@@ -1,10 +1,16 @@
+#date:2021.07.15 thu
+#author:eggngineer
+
+#modules=======
+#open3d:0.13.0
+#numpy:1.20.1
+
+
 from typing import KeysView
 import open3d as o3d
 import copy
 import numpy as np
-# from open3d.pipelines.registration import registration_ransac_based_on_feature_matching as RANSAC
-# from open3d.pipelines.registration import registration_icp as ICP
-# from open3d.pipelines.registration import compute_fpfh_feature as FPFH
+
 
 def show(model, scene, model_to_scene_trans=np.identity(4)):
     model_t = copy.deepcopy(model)
